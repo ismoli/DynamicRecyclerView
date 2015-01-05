@@ -65,6 +65,7 @@ As RecyclerView does not have standard way to add click listeners to the items, 
 ```
 
 ###Sample
-Sample app code is included, please see [DemoActivity](app/src/main/java/com/du/android/recyclerview/sample/DemoActivity.java)
-or there is an app Play Store that uses this plugins [/du:/ Tasks](https://play.google.com/store/apps/details?id=com.du.android)
+Sample app code is included, please see [DemoActivity](app/src/main/java/com/du/android/recyclerview/sample/DemoActivity.java).
+
+For full featured demo of real app see [/du:/ tasks app](https://play.google.com/store/apps/details?id=com.du.android) on Google Play Store
 
