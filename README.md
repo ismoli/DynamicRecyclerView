@@ -6,9 +6,9 @@ With this extensions you can create RecyclerView with following features:
 
 ###Drag and drop reordering.
 - Implemented using RecyclerView.OnItemTouchListener
-- Very light, ~350 LOC
 - Support for custom "Drag frame" drawable
- 
+- ~350 LOC
+
 #####Usage:
 ```java
     dragDropTouchListener = new DragDropTouchListener(recyclerView, this) {
@@ -27,7 +27,7 @@ With this extensions you can create RecyclerView with following features:
     recyclerView.addOnItemTouchListener(dragDropTouchListener);
 ```
 ###Swipe to dismiss items
-This is port of Roman Nurik's SwipeToDismiss https://github.com/romannurik/Android-SwipeToDismiss but for RecyclerView and using RecyclerView.OnItemTocuchListener
+This is port of Roman Nurik's [SwipeToDismiss for ListView](https://github.com/romannurik/Android-SwipeToDismiss)
 - Implemented using RecyclerView.OnItemTouchListener
 - Configurable swipe directions: only left, only right, both, none
 - ~320 LOC 
