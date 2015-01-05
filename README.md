@@ -1,10 +1,10 @@
 DynamicRecyclerView
 ===================
 
-Set of light and plugable extenstions for Android RecyclerView widget. Does not use custom RecyclerView or LayoutManager.
+Set of light and non-invasive extensions for Android RecyclerView widget. Does not use custom RecyclerView or LayoutManager.
 With this extensions you can create RecyclerView with following features:
 
-###Drag and drop RecyclerView items reordering. 
+###Drag and drop reordering.
 - Implemented using RecyclerView.OnItemTouchListener
 - Very light, ~350 LOC
 - Support for custom "Drag frame" drawable
@@ -26,7 +26,7 @@ With this extensions you can create RecyclerView with following features:
    
     recyclerView.addOnItemTouchListener(dragDropTouchListener);
 ```
-###Swipe to dismiss. 
+###Swipe to dismiss items
 This is port of Roman Nurik's SwipeToDismiss https://github.com/romannurik/Android-SwipeToDismiss but for RecyclerView and using RecyclerView.OnItemTocuchListener
 - Implemented using RecyclerView.OnItemTouchListener
 - Configurable swipe directions: only left, only right, both, none
@@ -50,8 +50,9 @@ This is port of Roman Nurik's SwipeToDismiss https://github.com/romannurik/Andro
   recyclerView.addOnItemTouchListener(swipeToDismissTouchListener);
 ```
 
-###RecyclerViewAdapter
-- Small RecyclerView.Adapter extension that can keep a state of selected/activated items
+###Select/activate items
+- Small RecyclerViewAdapter extension that can keep a state of selected/activated items
+
 #####Usage
 Use as normal RecyclerView.Adapter
 
@@ -63,4 +64,7 @@ As RecyclerView does not have standard way to add click listeners to the items, 
     recyclerView.addOnItemTouchListener(new ItemTouchListenerAdapter(recyclerView, this));
 ```
 
+###Sample
+Sample app code is included, please see [DemoActivity](app/src/main/java/com/du/android/recyclerview/sample/DemoActivity.java)
+or there is an app Play Store that uses this plugins [/du:/ Tasks](https://play.google.com/store/apps/details?id=com.du.android)
 
